@@ -7,14 +7,13 @@ app.controller('join.ctrl', ['$scope', '$http', function ($scope, $http) {
     $scope.first = "";
     $scope.last = "";
     $scope.id = "";
-    $scope.skill = false;
 
     $scope.confirmation = false;
 
     $scope.add=function () {
         $http({
             method: 'POST',
-            url: 'https://sheetsu.com/apis/f5b11595',
+            url: 'https://sheetsu.com/apis/v1.0/41c7d59d3855',
             headers: {
                 'Content-Type': "application/json"
             },
@@ -22,7 +21,6 @@ app.controller('join.ctrl', ['$scope', '$http', function ($scope, $http) {
                 "first": $scope.first,
                 "last": $scope.last,
                 "cid": $scope.id,
-                "skill": $scope.skill
             }
         }).then(function success(resp){
             console.log(resp);
@@ -34,7 +32,6 @@ app.controller('join.ctrl', ['$scope', '$http', function ($scope, $http) {
         $scope.first= "";
         $scope.last = "";
         $scope.id = "";
-        $scope.skill = false;
         $scope.confirmation = true;
     }
 }]);
