@@ -7,6 +7,7 @@ app.controller('join.ctrl', ['$scope', '$http', function ($scope, $http) {
     $scope.first = "";
     $scope.last = "";
     $scope.id = "";
+    $scope.year = "";
 
     $scope.confirmation = false;
 
@@ -21,6 +22,7 @@ app.controller('join.ctrl', ['$scope', '$http', function ($scope, $http) {
                 "first": $scope.first,
                 "last": $scope.last,
                 "cid": $scope.id,
+                "year": $scope.year,
             }
         }).then(function success(resp){
             console.log(resp);
@@ -32,6 +34,7 @@ app.controller('join.ctrl', ['$scope', '$http', function ($scope, $http) {
         $scope.first= "";
         $scope.last = "";
         $scope.id = "";
+        $scope.year = "";
         $scope.confirmation = true;
     }
 }]);
