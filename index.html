@@ -416,21 +416,9 @@
         </style>
     </head>
 
-    <body>
-        <p>Click on any image thumbnail to enlarge. Click again to hide:</p>
 
-        <img src="1_small.jpeg" style="cursor:pointer"
-             onclick="showImage(this.src, '1_large.jpeg');" />
-        <img src="2_small.jpeg" style="cursor:pointer"
-             onclick="showImage(this.src, '2_large.jpeg');" />
-        <img src="3_small.jpeg" style="cursor:pointer"
-             onclick="showImage(this.src, '3_large.jpeg');" />
 
-        <div id="largeImgPanel" onclick="this.style.display='none'">
-            <img id="largeImg"
-                 style="height:100%; margin:0; padding:0;" />
-        </div>
-    </body>
+
 
     <div class="row">
         <div class="col-md-4">
@@ -450,7 +438,12 @@
                 </div>
                 <div class="media-left">
                      <img src="resources/img/welcomedinner1"
-                     class="mini-thumbnail">
+                     class="mini-thumbnail"
+                     style="cursor:pointer"
+                     onclick="showImage(this.src, 'welcomedinner1.jpeg');" />
+                     <div id="largeImgPanel" onclick="this.style.display='none'">
+                        <img id="largeImg"
+                        style="height:100%; margin:0; padding:0;" />
                 </div>
                 <div class="media-left">
                      <img src="resources/img/welcomedinner2"
