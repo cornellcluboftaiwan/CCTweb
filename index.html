@@ -435,7 +435,9 @@
                 </div>
                 <div class="media-left">
                      <img src="resources/img/welcomedinner1"
-                     class="mini-thumbnail">
+                     style="cursor:pointer"
+                     class="mini-thumbnail"
+                     onclick="showImage(this.src, '1_large.jpeg');"/>
                 </div>
                 <div class="media-left">
                      <img src="resources/img/welcomedinner2"
@@ -592,6 +594,10 @@
             </div>
             </div>
         </div>
+    </div>
+    <div id="largeImgPanel" onclick="this.style.display='none'">
+            <img id="largeImg"
+                 style="height:100%; margin:0; padding:0;" />
     </div>
 
 </section>
