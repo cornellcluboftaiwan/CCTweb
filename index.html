@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <script type="text/javascript">
-            function showImage(smSrc, lgSrc) {
-                document.getElementById('largeImg').src = smSrc;
-                showLargeImagePanel();
-                unselectAll();
-                setTimeout(function() {
-                    document.getElementById('largeImg').src = lgSrc;
-                }, 1)
-            }
-            function showLargeImagePanel() {
-                document.getElementById('largeImgPanel').style.display = 'block';
-            }
-            function unselectAll() {
-                if(document.selection)
-                    document.selection.empty();
-                if(window.getSelection)
-                    window.getSelection().removeAllRanges();
-            }
-            </script>
-
-        <style type="text/css">
-            #largeImgPanel {
-                text-align: center;
-                display: none;
-                position: fixed;
-                z-index: 100;
-                top: 0; left: 0; width: 100%; height: 100%;
-                background-color: rgba(100,100,100, 0.5);
-            }
-        </style>
+<script type="text/javascript" src="http://files.dnr.state.mn.us/javascript/highslide/highslide-full.js"></script>
+<script type="text/javascript" src="http://files.dnr.state.mn.us/javascript/photo_enlarge.js"></script>
+<link rel="stylesheet" type="text/css" href="http://files.dnr.state.mn.us/javascript/highslide/highslide.css" />
+<link rel="stylesheet" type="text/css" href="http://files.dnr.state.mn.us/javascript/photo_enlarge.css" />
     
     
     <meta charset="utf-8">
