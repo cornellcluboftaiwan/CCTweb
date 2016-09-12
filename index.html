@@ -378,47 +378,12 @@
 
 
 
-<section class="container-fluid" id="example">
+
+<section class="container-fluid" id="example" data-ng-controller="enlarge.ctrl">
     <div class="row">
         <h1 class="text-center">Events</h1>
         <hr>
     </div>
-    
-    <script type="text/javascript">
-            function showImage(smSrc, lgSrc) {
-                document.getElementById('largeImg').src = smSrc;
-                showLargeImagePanel();
-                unselectAll();
-                setTimeout(function() {
-                    document.getElementById('largeImg').src = lgSrc;
-                }, 1)
-            }
-            function showLargeImagePanel() {
-                document.getElementById('largeImgPanel').style.display = 'block';
-            }
-            function unselectAll() {
-                if(document.selection)
-                    document.selection.empty();
-                if(window.getSelection)
-                    window.getSelection().removeAllRanges();
-            }
-        </script>
-
-        <style type="text/css">
-            #largeImgPanel {
-                text-align: center;
-                display: none;
-                position: fixed;
-                z-index: 100;
-                top: 0; left: 0; width: 100%; height: 100%;
-                background-color: rgba(100,100,100, 0.5);
-            }
-        </style>
-    </head>
-
-
-
-
 
     <div class="row">
         <div class="col-md-4">
@@ -439,12 +404,10 @@
                 <div class="media-left">
                      <img src="resources/img/welcomedinner1"
                      class="mini-thumbnail"
-                     style="cursor:pointer"
-                     onclick="showImage(this.src, 'welcomedinner1.jpeg');" />
-                     <div id="largeImgPanel" onclick="this.style.display='none'">
-                        <img id="largeImg"
-                        style="height:100%; margin:0; padding:0;" />
-                    </div>
+                        style="cursor:pointer" 
+                        onclick="showImage('./Images/image.jpg');">
+                        <div id="largeImgPanel" onclick="hideMe(this);">
+                        <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
                 </div>
                 <div class="media-left">
                      <img src="resources/img/welcomedinner2"
