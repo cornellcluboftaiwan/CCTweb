@@ -2,6 +2,35 @@
 <html lang="en">
 <head>
     
+   < if (document.images)
+        {
+            pic1on= new Image(471,305);
+            pic1on .src="/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/1/large.jpg"; 
+            pic1off= new Image(185,115);
+            pic1off .src="/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/1/small.jpg";
+        }
+        function lightup(imgName)
+            {
+    if (document.images)
+    {
+        imgOn=eval(imgName + "on.src");
+        document[imgName].src= imgOn;
+        document[imgName].height= 471;
+        document[imgName].width= 305;
+    }
+    }
+
+    function turnoff(imgName)
+    {
+    if (document.images)
+    {
+    imgOff=eval(imgName + "off.src");
+    document[imgName].src= imgOff;
+    document[imgName].height= 185;
+    document[imgName].width= 115;
+    }
+    }>
+    
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -403,9 +432,12 @@
                      this event, we introduce Cornell Club of Taiwan to the freshmen, and welcome them to join our CCT family.
                     </p>
                 </div>
-                <div class="photo_enlarge_box">
+                
+                <div class="media-left">
+                <A onMouseover="lightup('pic1')" onMouseout="turnoff('pic1')"> 
                      <img src="resources/img/welcomedinner1"
-                     class="mini-thumbnail">
+                     name="pic1" width="115" height="185" border="0">
+                /A>
                 </div>
                 <div class="media-left">
                      <img src="resources/img/welcomedinner2"
