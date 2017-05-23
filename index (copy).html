@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script type="text/javascript">
+            function showImage(smSrc, lgSrc) {
+                document.getElementById('largeImg').src = smSrc;
+                showLargeImagePanel();
+                unselectAll();
+                setTimeout(function() {
+                    document.getElementById('largeImg').src = lgSrc;
+                }, 1)
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.display = 'block';
+            }
+            function unselectAll() {
+                if(document.selection)
+                    document.selection.empty();
+                if(window.getSelection)
+                    window.getSelection().removeAllRanges();
+            }
+        </script>
+
+        <style type="text/css">
+            #largeImgPanel {
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 100;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(100,100,100, 0.5);
+            }
+        </style>
+    
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="The site for Cornell Club of Taiwan (CCT)">
+    <meta name="author" content="Jasmine Liu (cl777)">
+    <link rel="icon" href="resources/icons/tw.ico">
+
+    <title>CCT: Cornell Club of Taiwan</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/ngToast.css">
+    <link rel="stylesheet" href="css/ngToast-animations.css"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body class="main-content" data-spy="scroll" data-target="#navbar-collapsible" data-offset="20"
+      data-ng-app="csm.controllers">
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-danger" href="#landing"><img class="brand-icon"
+                                                                     src="resources/img/logos/cctlogo.gif">CCT</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#whatwedo">What We Do</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#Eboard Members">EBoard Members</a></li>
+                <li><a href="#example">Events</a></li>
+                <li><a href="#sponsors"> Connections </a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="container-fluid" id="landing">
+
+    <h1 class="text-center">Cornell Club of Taiwan</h1>
+    <h2 class="text-center lato">Networking Platform and Professional Outreach</h2>
+    <p class="text-center">
+                <!-- Switch to resources link -->
+                <img class="main-logo" src="resources/img/logos/cctfam2.jpg">
+    </p>
+    <!--<p class="text-center">
+        <a class="btn-danger btn-huge lato" href="#join">Join us!</a>
+    </p>-->
+
+    <a class="scroll-down animated fadeIn" href="#whatwedo">
+        <i class="fa fa-angle-down fa-2x"></i>
+    </a>
+</section>
+
+<section class="container-fluid" id="whatwedo">
+    <div class="row">
+        <h1 class="text-center">What We Do</h1>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInLeft animate">
+                            <div class="panel-heading">
+                                <h3>Networking</h3></div>
+                            <div class="panel-body">
+                                <img src="resources/img/WhatWeDo/network.jpg" class="whatwedo">
+                                <h4>Network with successful companies in all fields.</h4>
+
+                                <p>CCT serve as a platform where Taiwanese-related people from everywhere 
+                                can help the younger generation seek out their professional paths. We provide 
+                                all kinds of networking opportunities in all fields including fashion, medical, 
+                                engineering, and business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInUp animate">
+                            <div class="panel-heading">
+                                <h3>Connection</h3></div>
+                            <div class="panel-body">
+                                <img src="resources/img/WhatWeDo/connection.jpg" class="whatwedo">
+                                <h4>Establish close connections with alumni all over the world.</h4>
+
+                                <p>We work to build close connections between alumni, graduate students, 
+                                and other Taiwanese and Taiwanese American organizations. We create a 
+                                database of alumni all over the world with different professions who are 
+                                willing to mentor undergraduate students.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInRight animate">
+                            <div class="panel-heading">
+                                <h3>Home</h3></div>
+                            <div class="panel-body">
+                                <img src="resources/img/WhatWeDo/home.jpg" class="whatwedo">
+                                <h4>Home away from home.</h4>
+
+                                <p>Apart from our professional goals, we are a home away from home 
+                                for all Taiwanese and Taiwanese American students. We are a close-knit 
+                                family where you build long lasting relationships with the club members. 
+                                CCT is where friends become families. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/container-->
+</section>
+
+<section class="container-fluid" id="about">
+    <div class="row">
+        <h1 class="text-center">About Us</h1>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h3 class="text-center lato slideInUp animate">Three years ago, a couple of Cornell students with backgrounds of growing up 
+            in Taiwan created the club.
+            </h3>
+            <br>
+
+            <div class="row">
+                <div class="col-m-3 about-text text-center"> Since 2013...we strive to cultivate a strong network with collegiate Taiwanese 
+            student/alumni organizations across the nation and professional organizations.
+                </div>
+                <br>
+
+                <div class="col-m-3 about-text"> We are an on-campus organization that caters to the 
+                diverse professional interests of the Taiwanese community. Our club members have graduated to pursue finance, 
+                engineering, medical, and a wide variety of other careers. Our goal is to build a platform for the Taiwanese 
+                community at Cornell to learn, grow, network, and ultimately give back. Further, we host events that replicate 
+                those from Taiwan, effectively creating a home away from home environment.
+                </div>
+            </div>
+            <br>
+
+            <p class="text-center">
+                <!-- Switch to resources link -->
+                <img src="resources/img/logos/cctfam1.jpg"
+                     class="img-responsive thumbnail center-block mainimg">
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid" id="Eboard Members">
+    <font color="white">
+    <div class="row">
+        <h1 class="text-center">Our Eboard Members</h1>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="media">
+                <h3>President</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/may.jpg">
+                </div>
+                <div class="media-body media-middle">
+                    <h4>May Chen</h4>
+
+                    <p>I'm a junior majoring in hotel administration and minoring in real estate. 
+                       On campus, I work at The Statler Hotel, is the Assistant Director of Hotel 
+                       Ezra Cornell's Rooms division, and is also a teaching assistant for various 
+                       classes. This past summer, I've interned at the Corporate Development Office of 
+                       Regent Hotels Group in Taipei. In my free time, I enjoy reading, sleeping, 
+                       and cooking for friends.  </p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Vice President of Professional Development</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/max.JPG">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Max Lu</h4>
+
+                    <p>I’m a student majoring in hotel administration and minoring in German 
+                    and real estate at Cornell. Outside of CCT, I’m involved with Ascend, the Cornell 
+                    Hedge Fund, and Global China Connection on campus. This past summer, I worked as 
+                    an investment banking intern at Kerburn Rose as part of their mergers and acquisitions 
+                    team. In my free time, I enjoy traveling, reading, and listening to music.</p>
+                    <br><br><br>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Director of Finance</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/cat.jpg">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Catherine Lan</h4>
+
+                    <p>I’m a junior majoring in Environmental Science and Sustainability in CALS. 
+                       I’m from Taiwan and has lived all my life until I came to Cornell for college. 
+                       I’m interested in a career in sustainability, but I’m also open to other 
+                       opportunities. When I’m not studying, I love to sing, tap dance, and listen 
+                       to music.☺ </p>
+                       <br>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Director of Administrative Affairs</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/dylan.jpg">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Dylan Chiu</h4>
+
+                    <p>Hi! I'm Dylan, and I'm a sophomore studying Computer Science in CAS. 
+                       However, I'm still uncertain about my future profession...yikes. I was 
+                       born and raised in Taipei, Taiwan and therefore grew up munching on my 
+                       favorite food: rice and 小籠包. When I first came to Cornell, CCT provided 
+                       me with my first family here, so I hope I can do the same for any incoming members!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="media">
+                <h3>Senior Advisor</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/ginnie.jpg">
+                </div>
+                <div class="media-body media-middle">
+                    <h4>Ginnie Jeng</h4>
+
+                    <p>I'm a senior majoring in biological sciences with a concentration in neurobiology and behavior.
+                       I am fascinated with animals! I'm currently studying the behavior of chameleons and squirrels 
+                       at Cornell, and have two beloved toy poodles at home that I adore. I also love going to zoos and 
+                       aquariums, and have housed turtles, lizards, mantises, birds, fish, and tadpoles, to name a few.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Director of Professional Development - External</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/eric.jpg">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Eric Huang</h4>
+
+                    <p>I’m a sophomore majoring in hotel administration and minoring in real 
+                    estate as well as psychology. The past summer, I interned as an analyst at CITIC 
+                    Securities’ Investment Banking Department in Beijing. As a director of professional 
+                    development, I must say CCT provides a community in which its members are passionate 
+                    with a broad range of disciplines and interests; CCT’s not only a platform helpful for 
+                    individual growth, but a home away from home of earnest and real connections beyond campus life.</p>
+                   
+            
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Director of Marketing</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/kevin.jpg">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Kevin Wang</h4>
+
+                    <p>I'm a sophomore studying Human Biology, Health and Society in the College of Human Ecology,
+                       pursuing professional interests in healthcare and disease prevention. My fun fact is that 
+                       I've never been on a roller coaster, but hopefully that'll change soon! </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="media">
+                <h3>Senior Advisor</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/jasmine.jpg">
+                </div>
+                <div class="media-body media-middle">
+                    <h4>Jasmine Liu</h4>
+
+                    <p>I’m a junior studying material science engineering with minors in architecture and 
+                       mechanical engineering. I have several TA/AEW experiences on campus, and intern experiences 
+                       in both architecture and engineering fields. In the future, I wish to become an architect 
+                       with engineering design techniques.  One fun fact about me is that I love cold weather and truly 
+                       enjoy Ithaca winters!
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Director of Professional Development - Internal</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/wendy.jpg">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Wendy Zhuo</h4>
+
+                    <p>I’m a sophomore studying comparative literature on the premed track. Basic translation 
+                       of my future career: a doctor who loves reading and analyzing literature! Joining CCT 
+                       was one of the best decisions I have made coming here and I am very proud of my 
+                       half-Taiwanese, half-Shanghainese heritage. I look forward to serving as your 
+                       Director of Internal Professional Development! </p>
+                    <br><br><br>
+                </div>
+            </div>
+            <div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>Director of Programming</h3>
+
+                <div class="media-left">
+                    <img class="mini-thumbnail" src="resources/img/eboard/helen.jpg">
+                </div>
+
+                <div class="media-body media-middle">
+                    <h4>Helen Hsu</h4>
+
+                    <p>I am a sophomore in Applied Economics and Management concentrating in Environmental 
+                    Resource Economics and International Trade and Development. I am interested in combining 
+                    environmental science and business issues together and applying them in an international s
+                    etting. Outside of classes, you can generally find me in the pool, in the weight room, listening
+                    to cool music, or talking about how awesome Taiwan is, all while smelling like Chlorine.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+
+
+
+<section class="container-fluid" id="example">
+    <div class="row">
+        <h1 class="text-center">Events</h1>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="media">
+                <font color="white">
+                <h3>2016 New Student Welcoming Dinner</h3>
+                <br>
+                <div class=media-body media-middle">
+                <font color="red"> 
+                    <h4>Welcome to the CCT Family</h4>
+                <font color="white">
+                     <p>New Student Welcoming Dinner is our first event of the year. This year, we invite the incoming freshmen, 
+                     transfer students, and graduate students who are interested in our club to a dinner in Collegetown Plum Tree.
+                     The new students learn about lives in Cornell while chatting and socializing with current E-Board members. Through
+                     this event, we introduce Cornell Club of Taiwan to the freshmen, and welcome them to join our CCT family.
+                    </p>
+                </div>
+                
+            
+                <div class="media-left">
+                     <img src="resources/img/welcomedinner1"
+                     style="cursor:pointer"
+                     class="mini-thumbnail" 
+                     onclick="showImage(this.src, 'welcomedinner')">
+                     <div id="largeImgPanel" onclick="this.style.display='none'">
+                     <img id="largeImg"
+                     style="height:100%; margin:0; padding:0;" />
+                </div>
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/welcomedinner2"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/welcomedinner3"
+                     class="mini-thumbnail">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="media">
+                <font color="white">
+                <h3>2016 Cornell & BU Summer Networking Party</h3>
+                <div class=media-body media-middle">
+                <font color="red"> 
+                    <h4>Taipei Networking Event</h4>
+                <font color="white">
+                     <p>Co-hosted with Boston University Club of Taiwan, we organized an annual big social and networking event 
+                     in Taipei, Taiwan. Students from different schools such as NYU and LSE are all welcomed to this event. 
+                     We learned from other schools and made friends with start-up heads and industry leads during networking. 
+                     Meanwhile, guests enjoyed the summery fruity cocktails and authentic south-eastern Asian food prepared by 
+                     One Restaurant & Lounge.
+                    </p>
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/bu.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/netbu.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/bufood.jpg"
+                     class="mini-thumbnail">
+                </div>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="media">
+                <font color="white">
+                <h3>2015 Intercollegiate Symposium</h3>
+                <br>
+                <div class=media-body media-middle">
+                <font color="red"> 
+                    <h4>Business Without Borders</h4>
+                <font color="white">
+                     <p>2016 symposium was co-hosted by Cornell Club of Taiwan, NYU Taiwanese American Student Society, 
+                    and Parsons Taiwanese Student Association in NYC. With the topic of business without borders, we invited the  
+                    CEO of Manhattan Portage - Su-Hwei Lin, founder and CEO of Jade Chiu Designs - Jade Chiu, and founder and CEO of 
+                    Lululosophy - Lucia Liu, to discuss the cross-cultural exchange beyond national and language barriers through innovative businesses.
+                    </p>
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/CCT x NYU TASS x NEWSCHOOLTSA.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/brochure.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/grouppic.jpg"
+                     class="mini-thumbnail">
+                </div>
+            </div>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="media">
+                <h3>2015 Alumni Skype Panels</h3>
+                <div class=media-body media-middle">
+                <font color="red">
+                    <h4>Learning from our Connections</h4>
+                <font color="white">    
+                     <p>Several Skype panels were held during our 2015-16 school year. We've learned about lives in medical
+                     schools, real estate industries, and investment banking industries, and have had the opportunities to
+                     ask in-depth questions to our alumni connections. Special thanks to our alumni - Kevin Yen from Bentall 
+                     Kennedy, Angela Dai from BlackRock, James Chen from Barclays, and Peihsuan Tsai from Texas Tech University Health 
+                     Sciences Center School of Medicine!
+                    </p>
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/skyping.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/angela.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/skyping2.jpg"
+                     class="mini-thumbnail">
+                </div>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="media">
+                <h3>2015 Into the Streets Volunteering</h3>
+                <div class=media-body media-middle">
+                <font color="red">
+                    <h4>Giving Back to our Community</h4>
+                <font color="white">    
+                     <p>We participated in the annual Into the Streets event and volunteered at Youth Farm Project farm this year.
+                     Cornell Club of Taiwan, disguised as team Caramel Chocolate Truffle, peeled some onions and garlics, did 
+                     some farm work, enjoyed some fresh apple juice produced in the farm, made friends with the local farmers,
+                     and had a BLAST in the cold Ithaca weather. 
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/intostreet1.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/intostreet2.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/intostreet3.jpg"
+                     class="mini-thumbnail">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="media">
+                <h3>2016 Summer Internship Panel</h3>
+                <div class=media-body media-middle">
+                <font color="red">
+                    <h4>Networking Events in School Years</h4>
+                <font color="white">    
+                     <p>Targeting towards underclassmen who are interested in explore their career interests
+                     over the summer, we hold internship panels during the semesters. Our club members shared their 
+                     past internship experiences in fields such as consulting, engineering, medicine, and hospitality
+                     in both the U.S. and internationally in Taiwan. Attendees connect with the panelists, learn about 
+                     the lives in industries and were advised on tips of internship applications.
+                    </p>
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/panelist.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/networking.jpg"
+                     class="mini-thumbnail">
+                </div>
+                <div class="media-left">
+                     <img src="resources/img/entirebody.jpg"
+                     class="mini-thumbnail">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="largeImgPanel" onclick="this.style.display='none'">
+            <img id="largeImg"
+                 style="height:100%; margin:0; padding:0;" />
+    </div>
+
+</section>
+
+
+<section class="container-fluid" id="sponsors">
+    <div class="row">
+        <h1 class="text-center">Connections</h1>
+        <hr>
+    </div>
+    
+    <div class="container">
+            <div class="row">
+                <font color="black">
+                <div class="col-m-3 about-text text-center"> Our alumni spread all over the world and has been supporting us since 2013.<br>
+                These are our connections that we'd like to give a huge thanks to for supporting us and everything that we do! 
+                </div>
+                <br>
+            </div>
+            <br>
+
+            <p class="text-center">
+                <!-- Switch to resources link -->
+                <img src="resources/img/CCTWEB Logo.jpg"
+                     class="img-responsive thumbnail center-block mainimg">
+            </p>
+        </div>
+    </div>
+        
+        
+        
+        <div class="row">
+        </div>
+</section>
+
+<section class="container-fluid" id="join" data-ng-controller="join.ctrl">
+    <div class="row">
+        <h1 class="text-center">Join</h1>
+        <hr>
+    </div>
+    <div class="container v-center">
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <ul>
+                    <li>Do you feel like joining the CCT family?</li>
+                    <li>Join us by signing up with our listservs! Learn the networking skills, connect with our alumni and
+                        obtain a lifelong friendship!
+                    </li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="first" id="first"
+                               placeholder="First Name">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="last" id="last" placeholder="Last Name">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="id" id="id"
+                               placeholder="Cornell Email (ex: aaa22@cornell.edu)">
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" data-ng-model="year" id="year" placeholder="Year of Graduation (ex: 2018)">
+                    </div>
+                    
+                </div>
+            </form>
+
+            <br>
+
+            <p class="text-center">
+                <a href="#join" class="btn btn-danger btn-lg btn-huge lato" data-ng-click="add()">Join
+                    us!</a>
+            </p>
+            <br>
+
+            <div class="well btn-danger" data-ng-show="confirmation">
+                <h3>Success! Thank you for your interest in CCT! :)</h3>
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+
+    <br>
+</section>
+
+
+<section class="container-fluid" id="contact">
+    <div class="row">
+        <h1 class="text-center">Contact Us!</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="text-center">Feel free to e-mail us at <a href="mailto:cornellclub.taiwan@gmail.com"
+                                                                target="_top">
+                cornellclub.taiwan@gmail.com</a> with
+                any questions! </p>
+                
+                <p class="text-center">
+                <!-- Switch to resources link -->
+                <img src="resources/img/cctfam3.jpg"
+                     class="img-responsive thumbnail center-block mainimg">
+            </p>
+
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        Designed by Jasmine Liu. <br>
+        &copy; Cornell Club of Taiwan 2016-2017.
+    </div>
+
+    <div class="container">
+        <div class="social text-center">
+            <a href="mailto:cornellclub.taiwan@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+            <a href="https://www.facebook.com/CornellClubOfTaiwan" target="_newtab"><i class="fa fa-facebook fa-3x"></i></a>
+            <a href="https://www.youtube.com/channel/UCnOjdDI1h6XX1ZYE2miDsHw" target="_newtab"><i
+                    class="fa fa-youtube fa-3x"></i></a>
+        </div>
+
+        <div class="clear"></div>
+        <!--CLEAR FLOATS-->
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-sanitize.min.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- We use client cookies to save the REST API token -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-cookies.js"></script>
+
+<!-- Script Just One Page Theme -->
+<script src="js/scripts.js"></script>
+<script src="js/controllers.js"></script>
+</body>
+</html>

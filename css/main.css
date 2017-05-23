@@ -1,0 +1,19 @@
+body{
+	
+}
+
+#logo{
+	padding:4%;
+}
+
+#logo > img {
+	width:92%;
+}
+
+#topbar > .navbar:after{
+background: linear-gradient(to right, #b7201e 30%,#000000 30%);
+  height: 1%;
+  bottom: 0;
+  width:100%;
+}
+
