@@ -4,6 +4,7 @@ body{
 
 #logo{
 	padding:4%;
+	text-align: center;
 }
 
 #logo > img {
@@ -11,9 +12,45 @@ body{
 }
 
 #topbar > .navbar:after{
-background: linear-gradient(to right, #b7201e 30%,#000000 30%);
-  height: 1%;
-  bottom: 0;
-  width:100%;
+	background: linear-gradient(to right, #b7201e 30%,#000000 30%);
+	height: 1%;
+	width:100%;
 }
 
+@media (max-width: 768px) {
+	#topbar > .navbar:after{
+		background: linear-gradient(to right, #b7201e 50%,#000000 50%);
+	}
+}
+
+.icon-bar {
+    background-color: black;
+}
+
+.navbar * {
+	font-size: 18px;
+}
+
+*{
+	font-family: Sans;
+}
+
+@media (min-width: 768px){
+	.collapse > .nav{
+		position:absolute;
+		right: 5%;
+		bottom: 20%;
+	}
+	.navbar * {
+		font-size: 28px;
+	}
+}
+
+.navbar-nav > li > a {
+	color:black;
+	padding: 15px 20px 15px 20px;
+}
+
+#p1{
+	text-align: center;
+}
