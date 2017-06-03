@@ -13,8 +13,15 @@ body{
 
 #topbar > .navbar:after{
 	background: linear-gradient(to right, #b7201e 30%,#000000 30%);
-	height: 1%;
+	height: 6px;
 	width:100%;
+}
+
+#bottombar{
+	width: 100%;
+	border-width: 6px 0 0 0;
+	border-style: solid;
+	border-color: black;
 }
 
 @media (max-width: 768px) {
