@@ -61,3 +61,11 @@ body{
 #p1{
 	text-align: center;
 }
+
+footer{
+	padding: 2%;
+}
+
+footer a > img{
+	width:100%;
+}
