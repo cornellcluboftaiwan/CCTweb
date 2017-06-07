@@ -12,7 +12,7 @@ body{
 }
 
 #topbar > .navbar:after{
-	background: linear-gradient(to right, #b7201e 30%,#000000 30%);
+	background: linear-gradient(to right, #b7201e 33%,#000000 33%);
 	height: 6px;
 	width:100%;
 }
@@ -57,12 +57,18 @@ body{
 	padding: 15px 20px 15px 20px;
 }
 
+#active-page {
+	background-color: #DDDDDD;
+}
+
 #p1{
 	text-align: center;
 }
 
 footer{
-	padding: 2%;
+	padding: 3% 0 6% 0;
+	display: inline-block;
+	text-align: center;
 }
 
 footer a > img{
@@ -78,4 +84,38 @@ footer a > img{
 	width: 100%;
 	height: 5px;
 	margin: 20%;
+}
+
+#title{
+	margin: 50px auto;
+	// font-size: 80px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px){
+	#title{
+		font-size: 60px;
+	}
+}
+
+#h1{
+	margin-left:10%;
+	width: 80%;
+	box-shadow: 0 0 4px 1px black;
+	margin-bottom: 6%;
+}
+
+.navbar-right * {
+	font-family: Open Sans;
+}
+
+.container div{
+	font-size: 14px;
+	line-height: 200%;
+}
+
+#p1{
+	display:flex;
+	align-items: center;
 }
