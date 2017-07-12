@@ -113,7 +113,7 @@ footer a > img{
 #h1{
 	margin-left:10%;
 	width: 80%;
-	box-shadow: 0 0 4px 1px black;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
 	margin-bottom: 6%;
 }
 
