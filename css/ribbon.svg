@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="800"
-   height="800"
-   viewBox="0 0 800.00001 800.00001"
-   id="svg6299"
+   width="1200"
+   height="400"
+   viewBox="0 0 1200 400.00001"
+   id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="fb.svg">
+   sodipodi:docname="ribbon.svg">
   <defs
-     id="defs6301" />
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,23 +25,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.175"
-     inkscape:cx="-19.406918"
-     inkscape:cy="-8.8476562"
+     inkscape:zoom="0.35"
+     inkscape:cx="247.43661"
+     inkscape:cy="1.6532678"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:snap-bbox="true"
-     inkscape:bbox-paths="true"
-     inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
+     inkscape:snap-nodes="true"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
      inkscape:window-x="65"
@@ -49,17 +50,17 @@
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid6847" />
+       id="grid4136" />
   </sodipodi:namedview>
   <metadata
-     id="metadata6304">
+     id="metadata7">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,19 +68,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-252.36216)">
+     transform="translate(0,-652.36216)">
     <path
-       style="fill:#b7201e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 420,412.36216 0,160 -60,0 0,80 60,0 0,320 100,0 0,-320 80,0 40,-80 -120,0 0,-80 120,0 -40,-80 z"
-       id="path6851"
+       style="fill:none;fill-rule:evenodd;stroke:#b7201e;stroke-width:52;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 160,692.36216 480,1012.3622 800,692.36216 1120,1012.3622"
+       id="path4138-3"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccccccc" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:52;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6849"
-       width="640"
-       height="640"
-       x="80"
-       y="332.36215" />
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:52;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 158,1012.3622 478,692.36216 798,1012.3622 1118,692.36216"
+       id="path4138-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#b7201e;stroke-width:52;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 479,1011.3622 799,691.36213"
+       id="path4138-3-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

@@ -11,13 +11,13 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="800"
    height="800"
-   viewBox="0 0 800.00001 800.00001"
-   id="svg4136"
+   viewBox="0 0 800 800.00002"
+   id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="email.svg">
+   sodipodi:docname="science.svg">
   <defs
-     id="defs4138" />
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,27 +25,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.38714096"
-     inkscape:cx="73.810512"
-     inkscape:cy="400"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="361.72233"
+     inkscape:cy="277.56339"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:snap-bbox="true"
-     inkscape:object-paths="true"
-     inkscape:snap-intersection-paths="true"
-     inkscape:snap-smooth-nodes="true"
-     inkscape:bbox-nodes="true"
-     inkscape:bbox-paths="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
-     inkscape:snap-object-midpoints="true"
-     inkscape:snap-center="true"
-     inkscape:snap-text-baseline="true"
-     showguides="false"
      inkscape:window-width="1855"
      inkscape:window-height="1056"
      inkscape:window-x="65"
@@ -53,17 +49,17 @@
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid4684" />
+       id="grid4136" />
   </sodipodi:namedview>
   <metadata
-     id="metadata4141">
+     id="metadata7">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,27 +69,15 @@
      id="layer1"
      transform="translate(0,-252.36216)">
     <path
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:52;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 80,572.36216 320,-240 320,240"
-       id="path6238-3-7"
+       style="fill:#b7201e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 160,972.36216 160,-320 160,0 160,320 z"
+       id="path6232"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
-    <rect
-       style="fill:#b7201e;fill-opacity:1;stroke:#000000;stroke-width:52;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6276"
-       width="400"
-       height="360"
-       x="200"
-       y="452.36215"
-       ry="0" />
+       sodipodi:nodetypes="ccccc" />
     <path
-       id="path6238-3"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:52;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 80,572.36216 320,240 320,-240 m 0,0 0,400 -640,0 0,-400" />
-    <path
-       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:52;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
-       d="m 80,972.36216 320,-240 320,240 z"
-       id="path6238"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:52;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 160,972.36216 480,0 -160,-320 0,-320 -160,0 0,320 z"
+       id="path6230"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -1,5 +1,5 @@
 *{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -19,6 +19,7 @@ body{
 	background: linear-gradient(to right, #b7201e 33%,#000000 33%);
 	height: 6px;
 	width:100%;
+	border-radius: 16px;
 }
 #bottombar{
 	width: 100%;
@@ -26,6 +27,7 @@ body{
 	border-style: solid;
 	border-color: black;
 	margin-top: 30px;
+	border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -40,6 +42,7 @@ body{
 
 .navbar * {
 	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -121,12 +124,17 @@ footer a > img{
 }
 
 #p1{
-	display:flex;
+	//display:flex;
 	align-items: center;
 }
 
 #p1 *{
-	font-size: 20px
+	font-size: 32px;
+}
+
+#tp101{
+	//width:100%;
+	max-height: 400px;
 }
 
 #eb1 .eboard_box, #eb1 .eboard_box_pop{
@@ -155,7 +163,8 @@ footer a > img{
 #eb1 .eboard_box_pop{
 	//display: block;
 	position:absolute;
-	opacity: 0;
+	//opacity: 0;
+	display:none;
 	width: 100%;
 	height: 160%;
 	top: 0;
@@ -171,8 +180,15 @@ footer a > img{
 }*/
 
 #eb1 .eboard_box:hover .eboard_box_pop, #eb1 .eboard_box_pop:hover{
-	opacity: 1;
-	box-shadow: 0 0 4px 0 black;
+	//opacity: 1;
+	display: block;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
 	background-color: white;
 	z-index: 100;
+	border-radius: 5px;
+}
+
+#careerTile img{
+	width: 20%;
+
 }
