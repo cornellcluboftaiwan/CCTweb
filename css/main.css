@@ -1,5 +1,5 @@
 *{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Palatino Linotype', sans-serif;
 }
 
 body{
@@ -42,7 +42,7 @@ body{
 
 .navbar * {
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Trajan Pro', sans-serif;
 }
 
 
@@ -101,7 +101,7 @@ footer a > img{
 	margin: 50px auto;
 	// font-size: 80px;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Trajan Pro', sans-serif;
 }
 
 @media (min-width: 768px){
