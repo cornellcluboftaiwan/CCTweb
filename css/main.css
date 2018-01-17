@@ -10,7 +10,7 @@ body{
 #logo{
 	padding:6px;
 	text-align: center;
-	margin: auto;
+	height:100%;
 }
 
 #logo > img {
@@ -58,10 +58,10 @@ body{
 
 
 @media (min-width: 768px){
-	.collapse > .nav{
+	/* .collapse > .nav{
 		position:absolute;
 		right: 5%;
-	}
+	} */
 	.navbar * {
 		font-size: 12px;
 	}
@@ -87,9 +87,13 @@ body{
 }
 
 footer{
-	padding: 3% 0 6% 0;
+	position:absolute;
+	padding: 1% 0 3% 0;
+	left: 0;
+	width: 100%;
 	display: inline-block;
 	text-align: center;
+	/* box-shadow: 0 0 2vh 0 rgba(0,0,0,.2); */
 }
 
 footer a > img{
@@ -99,6 +103,7 @@ footer a > img{
 .navbar-toggle{
 	width: 48px;
 	margin: 1%;
+	margin-right: 6%;
 }
 
 .navbar-toggle .icon-bar{
@@ -119,14 +124,6 @@ footer a > img{
 		font-size: 60px;
 	}
 }
-
-#h1{
-	margin-left:10%;
-	width: 80%;
-	box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
-	margin-bottom: 6%;
-}
-
 
 .container div{
 	font-size: 14px;
@@ -198,7 +195,14 @@ footer a > img{
 	border-radius: 5px;
 }
 
-#careerTile img{
-	width: 20%;
+.home-carousel img, .about-carousel img{
+	width: 100%;
+}
 
+.about-carousel div{
+	padding: 10px;
+}
+
+.slick-track > .slick-slide{
+	height:auto;
 }
