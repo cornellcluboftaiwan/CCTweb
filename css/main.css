@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'Trajan Pro';
+	src: url('trajan.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Palatino Linotype';
+	src: url('pala.ttf') format('truetype');
+}
+
 *{
 	font-family: 'Palatino Linotype', sans-serif;
 }
@@ -193,6 +203,12 @@ footer a > img{
 	background-color: white;
 	z-index: 100;
 	border-radius: 5px;
+}
+
+.home-carousel{
+	/* position: absolute;
+	left: 0;
+	width:100%; */
 }
 
 .home-carousel img, .about-carousel img{
