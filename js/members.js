@@ -6,5 +6,5 @@ $(document).ready(function() {
 
 function processData(data) {
     var data = $.csv.toObjects(data);
-    print(data);
+    console.log(data);
 }
