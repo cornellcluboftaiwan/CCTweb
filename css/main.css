@@ -1,60 +1,60 @@
 @font-face {
-	font-family: 'Trajan Pro';
-	src: url('trajan.ttf') format('truetype');
+    font-family: 'Trajan Pro';
+    src: url('trajan.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Palatino Linotype';
-	src: url('pala.ttf') format('truetype');
+    font-family: 'Palatino Linotype';
+    src: url('pala.ttf') format('truetype');
 }
 
-*{
-	font-family: 'Palatino Linotype', sans-serif;
+* {
+    font-family: 'Palatino Linotype', sans-serif;
 }
 
-body{
-	background-color: #FFFFFF;
-	padding-top: 10vh;
+body {
+    background-color: #FFFFFF;
+    padding-top: 10vh;
 }
 
-#logo{
-	padding:6px;
-	text-align: center;
-	height:100%;
+#logo {
+    padding: 6px;
+    text-align: center;
+    height: 100%;
 }
 
-#logo > img {
-	max-height: 32px;
-	margin: auto;
+#logo>img {
+    max-height: 32px;
+    margin: auto;
 }
 
 #topbar {
-	z-index: 1000;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#topbar > .navbar {
-	box-shadow: 0 0 2vh 0 rgba(0,0,0,.4);
-	background: #FFFFFF;
-	border-radius: 0;
+#topbar>.navbar {
+    box-shadow: 0 0 2vh 0 rgba(0, 0, 0, .4);
+    background: #FFFFFF;
+    border-radius: 0;
 }
 
-#bottombar{
-	width: 100%;
-	border-width: 6px 0 0 0;
-	border-style: solid;
-	border-color: black;
-	margin-top: 30px;
-	border-radius: 5px;
+#bottombar {
+    width: 100%;
+    border-width: 6px 0 0 0;
+    border-style: solid;
+    border-color: black;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
-	#topbar > .navbar:after{
-		background: linear-gradient(to right, #b7201e 50%,#000000 50%);
-	}
+    #topbar>.navbar:after {
+        background: linear-gradient(to right, #b7201e 50%, #000000 50%);
+    }
 }
 
 .icon-bar {
@@ -62,104 +62,106 @@ body{
 }
 
 .navbar * {
-	font-size: 12px;
-	font-family: 'Trajan Pro', sans-serif;
+    font-size: 12px;
+    font-family: 'Trajan Pro', sans-serif;
 }
 
-
-@media (min-width: 768px){
-	/* .collapse > .nav{
+@media (min-width: 768px) {
+    /* .collapse > .nav{
 		position:absolute;
 		right: 5%;
 	} */
-	.navbar * {
-		font-size: 12px;
-	}
+    .navbar * {
+        font-size: 12px;
+    }
 }
 
-.navbar-nav > li > a {
-	color:black;
-	padding: 15px 20px 15px 20px;
+.navbar-nav>li>a {
+    color: black;
+    padding: 15px 20px 15px 20px;
 }
 
-.navbar-nav > li .active {
-	background-color: #b7201e;
-	color: #FFFFFF;
+.navbar-nav>li .active {
+    background-color: #b7201e;
+    color: #FFFFFF;
 }
 
-.navbar-nav > li .active:hover {
-	background-color: #D16463;
-	color: #FFFFFF;
+.navbar-nav>li .active:hover {
+    background-color: #D16463;
+    color: #FFFFFF;
 }
 
-#p1{
-	text-align: center;
+#p1 {
+    text-align: center;
 }
 
-footer{
-	position:absolute;
-	padding: 1% 0 3% 0;
-	left: 0;
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	/* box-shadow: 0 0 2vh 0 rgba(0,0,0,.2); */
+footer {
+    position: absolute;
+    padding: 1% 0 3% 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    /* box-shadow: 0 0 2vh 0 rgba(0,0,0,.2); */
 }
 
-footer a > img{
-	width:100%;
+footer a>img {
+    width: 100%;
 }
 
-.navbar-toggle{
-	width: 48px;
-	margin: 1%;
-	margin-right: 6%;
+.navbar-toggle {
+    width: 48px;
+    margin: 1%;
+    margin-right: 6%;
 }
 
-.navbar-toggle .icon-bar{
-	width: 30px;
-	height: 3px;
-	margin: 10%;
+.navbar-toggle .icon-bar {
+    width: 30px;
+    height: 3px;
+    margin: 10%;
 }
 
-#title{
-	margin: 50px auto;
-	/* // font-size: 80px; */
-	text-align: center;
-	font-family: 'Trajan Pro', sans-serif;
+#title {
+    margin: 50px auto;
+    /* // font-size: 80px; */
+    text-align: center;
+    font-family: 'Trajan Pro', sans-serif;
 }
 
-@media (min-width: 768px){
-	#title{
-		font-size: 60px;
-	}
+@media (min-width: 768px) {
+    #title {
+        font-size: 60px;
+    }
 }
 
-.container div{
-	font-size: 14px;
-	line-height: 200%;
+.container div {
+    font-size: 14px;
+    line-height: 200%;
 }
 
-#p1{
-	//display:flex;
-	align-items: center;
+#p1 {
+    /* //display:flex; */
+    align-items: center;
 }
 
-#tp101{
-	//width:100%;
-	max-height: 400px;
+#tp101 {
+    /* //width:100%; */
+    max-height: 400px;
 }
 
-#eb1 .eboard_box, #eb1 .eboard_box_pop{
-	text-align: center;
-	font-size: 20px;
+#eb1 .eboard_box,
+#eb1 .eboard_box_pop {
+    text-align: center;
+    font-size: 20px;
 }
 
-#eb1 img{
-	width: 100%;
-	padding: 5%;
-	box-sizing: border-box;
+#eb1 img {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
 }
+
+
 /*
 #eb1 .descr{
 	position: absolute;
@@ -169,21 +171,22 @@ footer a > img{
 	transition: all .2s ease;
 }*/
 
-#eb1 .eboard_box{
-	position:relative;
+#eb1 .eboard_box {
+    position: relative;
 }
 
-#eb1 .eboard_box_pop{
-	//display: block;
-	position:absolute;
-	//opacity: 0;
-	display:none;
-	width: 100%;
-	height: 160%;
-	top: 0;
-	left: 0;
-	transition: all .2s ease;
+#eb1 .eboard_box_pop {
+    /* //display: block; */
+    position: absolute;
+    /* //opacity: 0; */
+    display: none;
+    width: 100%;
+    height: 160%;
+    top: 0;
+    left: 0;
+    transition: all .2s ease;
 }
+
 
 /*
 #eb1 .eboard_box:hover{
@@ -192,33 +195,35 @@ footer a > img{
 
 }*/
 
-#eb1 .eboard_box:hover .eboard_box_pop, #eb1 .eboard_box_pop:hover{
-	/* opacity: 1; */
-	display: block;
-	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
-	background-color: white;
-	z-index: 100;
-	border-radius: 5px;
+#eb1 .eboard_box:hover .eboard_box_pop,
+#eb1 .eboard_box_pop:hover {
+    /* opacity: 1; */
+    display: block;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    background-color: white;
+    z-index: 100;
+    border-radius: 5px;
 }
 
-.home-carousel{
-	/* position: absolute;
+.home-carousel {
+    /* position: absolute;
 	left: 0;
 	width:100%; */
 }
 
-.home-carousel img, .about-carousel img{
-	width: 100%;
+.home-carousel img,
+.about-carousel img {
+    width: 100%;
 }
 
-.about-carousel div{
-	padding: 10px;
+.about-carousel div {
+    padding: 10px;
 }
 
-.slick-track > .slick-slide{
-	height:auto;
+.slick-track>.slick-slide {
+    height: auto;
 }
 
-p{
-	font-size: 20px;
+p {
+    font-size: 20px;
 }
