@@ -178,7 +178,7 @@ footer a>img {
 #eb1 .eboard_box_pop {
     /* //display: block; */
     position: absolute;
-    /* //opacity: 0; */
+    opacity: 0;
     display: none;
     width: 100%;
     height: 160%;
@@ -197,7 +197,7 @@ footer a>img {
 
 #eb1 .eboard_box:hover .eboard_box_pop,
 #eb1 .eboard_box_pop:hover {
-    /* opacity: 1; */
+    opacity: 1;
     display: block;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
     background-color: white;
