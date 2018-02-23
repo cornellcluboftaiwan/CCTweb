@@ -14,7 +14,7 @@ function processData(data) {
 
 function block2html(data) {
     var imgNamePos = "<img src = \"./img/" + (data.Image ? data.Image : "justT") + ".jpg\" >" +
-        data.Name + "<br>" + data["Eboard position"];
+        data.Name + "<br><div class=\"mem_pos\">" + data["Eboard position"] + "</div>";
 
     return "<div class=\"col-xs-6 col-sm-4 col-md-3 eboard_box \">" +
         imgNamePos + "<div class = \"col-xs-6 col-sm-4 col-md-3 eboard_box_pop\">" +
