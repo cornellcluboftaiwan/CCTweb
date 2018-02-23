@@ -161,16 +161,6 @@ footer a>img {
     box-sizing: border-box;
 }
 
-
-/*
-#eb1 .descr{
-	position: absolute;
-	//display: none;
-	overflow: hidden;
-	height: 0;
-	transition: all .2s ease;
-}*/
-
 #eb1 .eboard_box {
     position: relative;
 }
@@ -185,14 +175,6 @@ footer a>img {
     left: 0;
     transition: all .2s ease;
 }
-
-
-/*
-#eb1 .eboard_box:hover{
-	box-shadow: 0 0 10px 0 black;
-	background-color: #ffffff;
-
-}*/
 
 #eb1 .eboard_box:hover .eboard_box_pop,
 #eb1 .eboard_box_pop:hover {
