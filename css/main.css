@@ -8,7 +8,7 @@
     src: url('pala.ttf') format('truetype');
 }
 
-* {
+body {
     font-family: 'Palatino Linotype', sans-serif;
 }
 
