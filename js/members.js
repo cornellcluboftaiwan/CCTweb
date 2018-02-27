@@ -10,7 +10,7 @@ function block2html_e(data) {
 
 function block2html(data) {
     var imgNamePos = "<img src = \"./img/" + (data.Image ? data.Image : "justT") + ".jpg\" >" +
-        data.Name + "<br><div class=\"mem_pos\">" + data["Eboard position"] + "</div>";
+        data.Name;
 
     return "<div class=\"col-xs-6 col-sm-4 col-md-3 eboard_box \">" +
         imgNamePos + "<div class = \"col-xs-6 col-sm-4 col-md-3 eboard_box_pop\">" +
