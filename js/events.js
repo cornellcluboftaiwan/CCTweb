@@ -1,6 +1,6 @@
 function block2html(data) {
     return "<div class=\"col-xs-4\">" + data.Date + "</div><div class=\"col-xs-8\">" +
-        "<a href=\"" + data.FB + "\">" + data.Name + "</a></div>"
+        "<a href=\"" + data.FB + "\" target=\"_blank\">" + data.Name + "</a></div>"
 }
 
 $(document).ready(function() {
