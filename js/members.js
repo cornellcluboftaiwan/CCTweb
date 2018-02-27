@@ -20,10 +20,10 @@ function block2html(data) {
 
 $(document).ready(function() {
     $.get("./csv/eboard.csv").done(function(data) {
-        processData(data, "eb1", block2html_e);
+        processData(data, "#eb1", block2html_e);
     });
     $.get("./csv/members.csv").done(function(data) {
-        processData(data, "mem", block2html);
+        processData(data, "#mem", block2html);
     });
 });
 
