@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="portal" class="container">
         <a id="portal_login" href="#">Login</a>
     </div>
 
@@ -81,7 +81,8 @@
                 var token = result.credential.accessToken;
                 var user = result.user;
                 console.log(user);
-                // ...
+                $("#portal").html("<div>Logged in as " + user.email + ". Portal will be updated soon.</div>")
+                    // ...
             }).catch(function(error) {
                 // Handle Errors here.
                 var errorCode = error.code;
