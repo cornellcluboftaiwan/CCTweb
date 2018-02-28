@@ -57,6 +57,8 @@
         </div>
     </div>
 
+    <a id="portal_login" href="#">Login</a>>
+
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
@@ -75,18 +77,20 @@
 
         var provider = new firebase.auth.GoogleAuthProvider();
 
-        firebase.auth().signInWithPopup(provider).then(function (result) {
-            var token = result.credential.accessToken;
-            var user = result.user;
-            console.log(user);
-            // ...
-        }).catch(function (error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            var email = error.email;
-            var credential = error.credential;
-        });
+        $("#portal_login").click(function() {
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+                var token = result.credential.accessToken;
+                var user = result.user;
+                console.log(user);
+                // ...
+            }).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                var email = error.email;
+                var credential = error.credential;
+            });
+        })
     </script>
 </body>
 <footer>
