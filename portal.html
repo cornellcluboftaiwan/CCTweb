@@ -64,8 +64,9 @@
 
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script>
-        var onDataLoaded = function(data){
-            console.log(data)
+        var values;
+        var onDataLoaded = function (data) {
+            values = data.values;
         }
 
         var config = {
@@ -79,12 +80,16 @@
         firebase.initializeApp(config);
 
         var provider = new firebase.auth.GoogleAuthProvider();
+        console.log(provider)
 
         $("#portal_login").click(function () {
+            console.log("clicked")
             firebase.auth().signInWithPopup(provider).then(function (result) {
                 var token = result.credential.accessToken;
                 var user = result.user;
-                console.log(user);
+                console.log("clicked2")
+                console.log(user.email.split("@")[0]);
+
                 $("#portal").html("<div>Logged in as " + user.email + ". Portal will be updated soon.</div>")
                 // ...
             }).catch(function (error) {
@@ -95,7 +100,7 @@
                 var credential = error.credential;
             });
         })
-        $.get("https://sheets.googleapis.com/v4/spreadsheets/17Tvy1XGvgBUVRhPPc_7qgDdrYS8Iq7uPuNl-Wor83J4/values/'Spring%202018'!B:C?key=AIzaSyCMs99x075GStFbTCYNIVlp_yEzvrl6Rl0").done(function(bob){console.log(bob)})
+        $.get("https://sheets.googleapis.com/v4/spreadsheets/17Tvy1XGvgBUVRhPPc_7qgDdrYS8Iq7uPuNl-Wor83J4/values/'Spring%202018'!B:C?key=AIzaSyCMs99x075GStFbTCYNIVlp_yEzvrl6Rl0").done(onDataLoaded)
     </script>
 </body>
 <footer>
