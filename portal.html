@@ -64,7 +64,10 @@
 
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script>
-        Initialize Firebase
+        var onDataLoaded = function(data){
+            console.log(data)
+        }
+        
         var config = {
             apiKey: "AIzaSyD5RfGoMCuLL2G7SbDK-OBGnJo18VuS2dQ",
             authDomain: "cct-website-196921.firebaseapp.com",
@@ -93,9 +96,6 @@
             });
         })
 
-        var onDataLoaded = function(data){
-            console.log(data)
-        }
 
     </script>
     <script src="https://spreadsheets.google.com/feeds/cells/17Tvy1XGvgBUVRhPPc_7qgDdrYS8Iq7uPuNl-Wor83J4/1/public/basic?alt=json-in-script&callback=onDataLoaded"></script>
