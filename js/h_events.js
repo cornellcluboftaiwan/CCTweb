@@ -1,16 +1,16 @@
 function block2html(data) {
-    return "<div class=\"col-xs-4\">" + data.Date + "</div><div class=\"col-xs-8\">" +
-        "<a href=\"" + data.FB + "\" target=\"_blank\">" + data.Name + "</a></div>"
+    return "<div class=\"col-xs-4\">" + data[1] + "</div><div class=\"col-xs-8\">" +
+        "<a href=\"" + data[2] + "\" target=\"_blank\">" + data[0] + "</a></div>"
 }
 
 $(document).ready(function() {
-    $.get("./csv/events.csv").done(function(data) {
+    $.get("https://sheets.googleapis.com/v4/spreadsheets/1i1bcmeKGIjHaWqP57CoD1lj8b2eHLQPIx0MSmUvvhbc/values/events!A2:C?key=AIzaSyCMs99x075GStFbTCYNIVlp_yEzvrl6Rl0").done(function(data) {
         processData(data, "#evt", block2html);
     });
 });
 
 function processData(data, id, b2h) {
-    var data = $.csv.toObjects(data);
+    var data = data.values;
     for (var i = 0; i < Math.min(data.length, 3); i++) {
         $(id).append(b2h(data[i]));
     }
