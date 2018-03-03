@@ -212,3 +212,16 @@ p {
 .mem_pos {
     font-size: 12px;
 }
+
+.portal_button{
+    font-size: 16px;
+    padding: 16px;
+    color: white;
+    background-color: #b7201e;
+}
+
+.portal_button:hover{
+    background-color: #D16463;
+    color: white;
+    text-decoration: none;
+}

@@ -16,10 +16,10 @@ firebase.initializeApp(config);
 var provider = new firebase
     .auth
     .GoogleAuthProvider();
-    
-var netid2cred = function(netid){
-    for(var i = 0; i < values.length; i++){
-        if(values[i][0] == netid)
+
+var netid2cred = function (netid) {
+    for (var i = 0; i < values.length; i++) {
+        if (values[i][0] == netid) 
             return values[i][1]
     }
     return 0;
@@ -33,13 +33,25 @@ $("#portal_login").click(function () {
         .then(function (result) {
             var token = result.credential.accessToken;
             var user = result.user;
-            console.log("clicked2")
-            console.log(user.email.split("@")[0]);
             var netid = user
                 .email
                 .split("@")[0];
 
-            $("#portal").html("<div>Logged in as " + user.email + ". You have " + netid2cred(netid) + " credits.</div>")
+            var domain = user
+                .email
+                .split("@")[1];
+
+            message = "";
+
+            if (domain != "cornell.edu") {
+                message = "Please refresh and login with your Cornell Gmail account!";
+            } else {
+                message = "<div>Logged in as " + user.email + ". You have " + netid2cred(netid) + " credits.\
+                 <br> More features coming soon!</div><a class=\"portal_button\" id=\"portal_" +
+                        "logout\" href=\"./portal\">Logout</a>";
+            }
+
+            $("#portal").html(message);
 
         })
         .catch(function (error) {
