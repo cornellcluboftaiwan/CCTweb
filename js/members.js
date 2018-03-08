@@ -13,7 +13,7 @@ function block2html_e(data) {
     return "<div class=\"col-xs-6 col-sm-4 col-md-3 eboard_box \">" +
         imgNamePos + "<div class = \"col-xs-6 col-sm-4 col-md-3 eboard_box_pop\">" +
         imgNamePos + "<div class = \"descr\">" + data[1] + "<br>" + data[2] +
-        "</div> </div > </div>"
+        "<br><br></div> </div > </div>"
 }
 
 function block2html(data) {
@@ -23,7 +23,7 @@ function block2html(data) {
     return "<div class=\"col-xs-6 col-sm-4 col-md-3 eboard_box \">" +
         imgNamePos + "<div class = \"col-xs-6 col-sm-4 col-md-3 eboard_box_pop\">" +
         imgNamePos + "<div class = \"descr\">" + data[1] + "<br>" + data[2] +
-        "</div> </div > </div>"
+        "<br><br></div> </div > </div>"
 }
 
 $(document).ready(function() {
