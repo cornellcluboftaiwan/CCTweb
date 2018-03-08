@@ -46,8 +46,8 @@ $("#portal_login").click(function () {
             if (domain != "cornell.edu") {
                 message = "Please refresh and login with your Cornell Gmail account!";
             } else {
-                message = "<div>Logged in as " + user.email + ". You have " + netid2cred(netid) + " credits.\
-                 <br> More features coming soon!</div><a class=\"portal_button\" id=\"portal_" +
+                message = "<h1>Logged in as " + user.email + ". You have " + netid2cred(netid) + " credits.\
+                 <br> More features coming soon!</h1><br><br><br><a class=\"portal_button\" id=\"portal_" +
                         "logout\" href=\"./portal\">Logout</a>";
             }
 
