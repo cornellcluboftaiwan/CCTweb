@@ -1,5 +1,5 @@
 function block2html(data) {
-    return "<div class=\"col-xs-offset-1 col-xs-3 col-md-offset-3 col-md-2\">" + data[1] + "</div><div class=\"col-xs-8\">" +
+    return "<div class=\"col-xs-offset-1 col-xs-3 col-md-offset-3 col-md-2\">" + data[1] + "</div><div class=\"col-xs-8 col-md-7\">" +
         "<a href=\"" + data[2] + "\" target=\"_blank\">" + data[0] + "</a></div>"
 }
 
