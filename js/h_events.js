@@ -1,5 +1,5 @@
 function block2html(data) {
-	return "<div class=\"col-xs-12\">" + data[1] + "\t<a href=\"" + data[2] + "\" target=\"_blank\">" + data[0] + "</a></div>"
+	return "<div class=\"col-xs-12\">" + data[1] + "\t<a href=\"" + data[2] + "\" target=\"_blank\">" + (data[0] ? data[0] : data[0]) + "</a></div>";
 }
 
 $(document)
