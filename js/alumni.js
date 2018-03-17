@@ -7,7 +7,7 @@
 // };
 
 function block2html(data) {
-	return "<div class=\"col-xs-12\"><div class=\"col-xs-6\">" + data[0] + "</div><div class=\"col-xs-6\">" + data[1] + "</div>";
+	return "<div class=\"col-xs-12\"><div class=\"col-xs-6\">" + data[0] + "</div><div class=\"col-xs-6\">" + (data[1] ? data[1] : "") + "</div>";
 }
 
 
