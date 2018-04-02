@@ -47,7 +47,10 @@ $("#portal_login").click(function () {
 				message = "Please refresh and login with your Cornell Gmail account!";
 			} else {
 				message = "<h1>Logged in as " + user.email + ". You have " + netid2cred(netid) + " credits.\
-                 <br> More features coming soon!</h1><br><br><br><a class=\"portal_button\" id=\"portal_" +
+				 <br>" 
+				 + "<a href='https://docs.google.com/spreadsheets/d/1NKKjPCeVC0TytgSiXySZuu7kCMmXNvLhifAhixFfWPk/edit?usp=sharing'>Network Database</a><br>"
+				 + "<a href='https://docs.google.com/spreadsheets/d/1B_DlYajnPGeXb8d6CSPDFxrhc-9vCad4-5U7uiCpUqU/edit?usp=sharing'>Course Recommendation Database</a></h1>" + 
+				 "<br><br><br><a class=\"portal_button\" id=\"portal_" +
                         "logout\" href=\"./portal\">Logout</a>";
 			}
 
